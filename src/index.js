@@ -5,7 +5,7 @@ import './index.css';
 let model = { clicks: 0 };
 function render() {
   ReactDOM.render(
-    <App clicks={model.clicks} onClick={() => { model.clicks += 1; render(); }} />,
+    <App clicks={model.clicks} onClickDiv={() => { model.clicks += 1; render(); }} />,
     document.getElementById('root')
   );
 }
